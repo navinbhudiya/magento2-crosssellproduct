@@ -9,8 +9,3 @@ The Cross Sell Products extension display cross sell products on product detail 
 - Run command: <b>php bin/magento setup:static-content:deploy</b>
 - Now flush cache: <b>php bin/magento cache:flush</b>
 
-
-# Screenshot
-
-<h3>Product Page</h3>
-<img src="https://prnt.sc/h18itm" border="0">
