@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <referenceContainer name="content.aside">
+        <block class="Navin\Crosssellproduct\Block\Crosssellproduct" name="product.crosssell" template="Magento_Catalog::product/list/items.phtml" after="-">
+            <arguments>
+                <argument name="type" xsi:type="string">crosssell</argument>
+            </arguments>
+            <block class="Magento\Catalog\Block\Product\ProductList\Item\Container" name="crosssell.product.addto" as="addto">
+                <block class="Magento\Catalog\Block\Product\ProductList\Item\AddTo\Compare"
+                       name="crosssell.product.addto.compare" as="compare"
+                       template="Magento_Catalog::product/list/addto/compare.phtml"/>
+            </block>
+        </block>
+    </referenceContainer>
+</page>
